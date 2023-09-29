@@ -1,6 +1,34 @@
+@font-face {
+    font-family: 'SpaceMono';
+    src: url('../assets/SpaceMono-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SpaceMono-bold';
+    src: url('../assets/SpaceMono-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SpaceMono-BoldItalic';
+    src: url('../assets/SpaceMono-BoldItalic.ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SpaceMono-Italic';
+    src: url('../assets/SpaceMono-Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
 body, :root {
     margin: 0;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: SpaceMono;
     --navbarHeight: 4rem;
     --navbarColor: rgb(183, 225, 231);
     background-image: url(../img/background.jpg);
@@ -17,7 +45,7 @@ body, :root {
     position: sticky;
 }
 
-.nav ul {
+ul {
     list-style: none;
     padding: 0;
 }
@@ -34,8 +62,8 @@ body, :root {
     text-decoration: none;
 }
 
-.nav li:hover {
-    color: blueviolet;
+.nav a:hover {
+    text-decoration: underline;
 }
 
 .logo {
@@ -46,7 +74,24 @@ body, :root {
 .content {
     min-height: calc(100vh - var(--navbarHeight) * 1.1);
     max-height: fit-content;
-    width: 75vw;
-    background-color: rgb(255, 255, 255);
+    width: 60vw;
+    background-color: #f0f8f7;
     margin: auto;
+    border-radius: 10px;
+    border: 2px solid #5bc9a6;
+    padding: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.content a {
+    color: rgb(10, 137, 137);
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 0.5rem;
+    margin: 0.25rem;
+}
+
+p {
+    line-height: 1.5rem;   
 }
