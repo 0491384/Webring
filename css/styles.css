@@ -1,0 +1,52 @@
+body, :root {
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    --navbarHeight: 4rem;
+    --navbarColor: rgb(183, 225, 231);
+    background-image: url(../img/background.jpg);
+    background-size: 10rem;
+}
+
+.nav {
+    width: 100vw;
+    height: var(--navbarHeight);
+    background-color: var(--navbarColor);
+    display: inline-flex;
+    align-items: center;
+    top: 0;
+    position: sticky;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav li {
+    margin-left: 1rem;
+    padding: 0;
+    font-size: 1.25rem;
+    display: inline-block;
+}
+
+.nav a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav li:hover {
+    color: blueviolet;
+}
+
+.logo {
+    height: var(--navbarHeight);
+    width: var(--navbarHeight);
+}
+
+.content {
+    min-height: calc(100vh - var(--navbarHeight) * 1.1);
+    max-height: fit-content;
+    width: 75vw;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+}
