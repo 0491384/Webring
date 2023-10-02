@@ -71,6 +71,24 @@ ul {
     width: var(--navbarHeight);
 }
 
+.footer {
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 60vw;
+    background-color: #f0f8f7;
+    border-radius: 10px;
+    border: 2px solid #5bc9a6;
+    padding: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.footer a {
+    color: rgb(22, 68, 68);
+    text-decoration: none;
+}
+
 .content {
     min-height: calc(100vh - var(--navbarHeight) * 1.1);
     max-height: fit-content;
@@ -85,7 +103,7 @@ ul {
 }
 
 .content a {
-    color: rgb(10, 137, 137);
+    color: rgb(22, 68, 68);
     text-decoration: none;
     border: 1px solid black;
     padding: 0.5rem;
